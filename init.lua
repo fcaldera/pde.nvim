@@ -30,3 +30,4 @@ require("lazy").setup({
 require("fernando.keymaps")
 
 vim.cmd.colorscheme "catppuccin"
+
