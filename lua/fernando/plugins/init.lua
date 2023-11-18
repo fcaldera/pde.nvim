@@ -1,10 +1,6 @@
 return {
-  -- Git related plugins
-  'tpope/vim-fugitive',
+  'tpope/vim-fugitive',             -- Git related plugins
   'tpope/vim-rhubarb',
-
-  -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
-
-  -- "christoomey/vim-tmux-navigator", -- tmux & split window navigation
+  'tpope/vim-sleuth',               -- Detect tabstop and shiftwidth automatically
+  'christoomey/vim-tmux-navigator', -- tmux & split window navigation
 }
