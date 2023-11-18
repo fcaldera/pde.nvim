@@ -1,5 +1,4 @@
 -- [[ Basic Keymaps ]]
-vim.keymap.set('n', '<leader>ke', vim.cmd.Ex, { desc = 'Explore directory of current file' })
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
@@ -26,8 +25,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
--- Document custom key chains
-require('which-key').register {
-  ['<leader>k'] = { name = 'Command', _ = 'which_key_ignore' },
-}
 -- vim: ts=2 sts=2 sw=2 et
