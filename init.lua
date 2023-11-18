@@ -4,7 +4,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-require("fernando.core")
+require("fernando.options")
 
 -- Install `lazy.nvim` plugin manager
 -- https://github.com/folke/lazy.nvim
@@ -27,9 +27,6 @@ require("lazy").setup({
   { import = 'fernando.plugins' }
 })
 
--- Document custom key chains
-require('which-key').register {
-  ['<leader>k'] = { name = 'Command', _ = 'which_key_ignore' },
-}
+require("fernando.keymaps")
 
 vim.cmd.colorscheme "catppuccin"
