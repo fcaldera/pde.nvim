@@ -40,5 +40,26 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
--- vim: ts=2 sts=2 sw=2 et
+-- Delete and avoid register
+vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
 
+-- The primeagen said that Q was the worst place in the universe.
+-- I still don't know why, but here we are!
+vim.keymap.set('n', 'Q', '<nop>')
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+
+-- [[ My commands variations ]]
+require('which-key').register({
+  ['<leader>k'] = { name = 'Commands', _ = 'which_key_ignore' },
+})
+
+vim.keymap.set(
+  "n", "<leader>kr",
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = '[R]eplace all with...' }
+)
+
+vim.keymap.set('n', '<leader>ke', vim.cmd.Ex, { desc = '[E]xpolore' })
+
+
+-- vim: ts=2 sts=2 sw=2 et
