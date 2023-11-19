@@ -46,7 +46,6 @@ vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
 -- The primeagen said that Q was the worst place in the universe.
 -- I still don't know why, but here we are!
 vim.keymap.set('n', 'Q', '<nop>')
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- [[ My commands variations ]]
 require('which-key').register({
@@ -60,6 +59,6 @@ vim.keymap.set(
 )
 
 vim.keymap.set('n', '<leader>ke', vim.cmd.Ex, { desc = '[E]xpolore' })
-
+vim.keymap.set("n", "<leader>kf", vim.lsp.buf.format, { desc = '[F]ormat document' })
 
 -- vim: ts=2 sts=2 sw=2 et

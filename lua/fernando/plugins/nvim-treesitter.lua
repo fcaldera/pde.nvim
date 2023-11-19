@@ -1,5 +1,7 @@
 return {
-  -- Highlight, edit, and navigate code
+  -- Treesitter is a new parser generator tool that we can
+  -- use in Neovim to power faster and more accurate
+  -- syntax highlighting.
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
   dependencies = {
@@ -7,7 +9,7 @@ return {
     -- "windwp/nvim-ts-autotag",
   },
   config = function()
-    -- [[ Configure Treesitter ]]
+    -- [[ Configure Tresitter ]]
     -- See `:help nvim-treesitter`
     -- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
     vim.defer_fn(function()
