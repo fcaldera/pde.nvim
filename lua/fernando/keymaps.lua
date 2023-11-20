@@ -59,6 +59,5 @@ vim.keymap.set(
 )
 
 vim.keymap.set('n', '<leader>ke', vim.cmd.Ex, { desc = '[E]xpolore' })
-vim.keymap.set("n", "<leader>kf", vim.lsp.buf.format, { desc = '[F]ormat document' })
 
 -- vim: ts=2 sts=2 sw=2 et
