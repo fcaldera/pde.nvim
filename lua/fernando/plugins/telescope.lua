@@ -19,12 +19,15 @@ return {
   },
   config = function()
     -- See `:help telescope` and `:help telescope.setup()`
+    local actions = require('telescope.actions')
     require('telescope').setup {
       defaults = {
         mappings = {
           i = {
             ['<C-u>'] = false,
-            ['<C-d>'] = false,
+            ["<C-d>"] = actions.delete_buffer + actions.move_to_top,
+            ["<C-k>"] = actions.move_selection_previous,
+            ["<C-j>"] = actions.move_selection_next,
           },
         },
       },
