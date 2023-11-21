@@ -6,6 +6,7 @@ return {
   build = ":TSUpdate",
   dependencies = {
     "nvim-treesitter/nvim-treesitter-textobjects",
+    "nvim-treesitter/nvim-treesitter-context",
     -- "windwp/nvim-ts-autotag",
   },
   config = function()
@@ -102,6 +103,8 @@ return {
           },
         },
       })
+
+      vim.keymap.set("n", "[C", require("treesitter-context").go_to_context, { desc = "Goto context", silent = true })
     end, 0)
   end,
 }
