@@ -94,10 +94,7 @@ return {
           telemetry = { enable = false },
         },
       },
-      -- clangd = {},
-      -- gopls = {},
-      -- pyright = {},
-      -- rust_analyzer = {},
+      vue_ls = {},
     }
 
     -- Setup neovim lua configuration

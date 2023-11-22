@@ -28,6 +28,7 @@ return {
       json = { { "prettierd", "prettier" } },
       yaml = { { "prettierd", "prettier" } },
       markdown = { { "prettierd", "prettier" } },
+      vue = { { "prettierd", "prettier" } },
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },
