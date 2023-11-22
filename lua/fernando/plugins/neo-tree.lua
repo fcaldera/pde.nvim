@@ -264,6 +264,6 @@ return {
     })
 
     vim.keymap.set("n", "<leader>ke", ":Neotree show reveal_force_cwd current<CR>", { desc = "Show file [E]xplorer" })
-    vim.keymap.set("n", "<leader>kb", ":Neotree buffers toggle reveal right<CR>", { desc = "Toggle [B]uffers" })
+    vim.keymap.set("n", "<leader>kb", ":Neotree buffers show focus reveal right<CR>", { desc = "Show [B]uffers tree" })
   end,
 }
