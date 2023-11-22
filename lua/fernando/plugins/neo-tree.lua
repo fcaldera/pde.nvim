@@ -216,7 +216,7 @@ return {
     end
 
     local function switch_to(source)
-      require("neo-tree.command").execute({ action = "focus", source = source, position = "float" })
+      require("neo-tree.command").execute({ action = "focus", source = source, position = "right" })
     end
 
     require("neo-tree").setup({
@@ -263,7 +263,7 @@ return {
       },
     })
 
-    vim.keymap.set("n", "<leader>ke", ":Neotree show reveal_force_cwd current<CR>", { desc = "[E]xpolore" })
+    vim.keymap.set("n", "<leader>ke", ":Neotree show reveal_force_cwd current<CR>", { desc = "Show file [E]xplorer" })
     vim.keymap.set("n", "<leader>kb", ":Neotree buffers toggle reveal right<CR>", { desc = "Toggle [B]uffers" })
   end,
 }
