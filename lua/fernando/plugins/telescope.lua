@@ -83,12 +83,12 @@ return {
     end, { desc = "[/] Fuzzily search in current buffer" })
 
     vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files, { desc = "Search [G]it [F]iles" })
-    vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
-    vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
-    vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
-    vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
-    vim.keymap.set("n", "<leader>sG", ":LiveGrepGitRoot<cr>", { desc = "[S]earch by [G]rep on Git Root" })
-    vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
-    vim.keymap.set("n", "<leader>sr", require("telescope.builtin").resume, { desc = "[S]earch [R]esume" })
+    vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Search [F]iles" })
+    vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags, { desc = "Search [H]elp" })
+    vim.keymap.set("n", "<leader>fw", require("telescope.builtin").grep_string, { desc = "Search current [W]ord" })
+    vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Search by [G]rep" })
+    vim.keymap.set("n", "<leader>fG", ":LiveGrepGitRoot<cr>", { desc = "Search by [G]rep on Git Root" })
+    vim.keymap.set("n", "<leader>fd", require("telescope.builtin").diagnostics, { desc = "Search [D]iagnostics" })
+    vim.keymap.set("n", "<leader>fr", require("telescope.builtin").resume, { desc = "Search [R]esume" })
   end,
 }
