@@ -69,6 +69,4 @@ vim.keymap.set(
   { desc = "[R]eplace all with..." }
 )
 
-vim.keymap.set("n", "<leader>ke", vim.cmd.Ex, { desc = "[E]xpolore" })
-
 -- vim: ts=2 sts=2 sw=2 et

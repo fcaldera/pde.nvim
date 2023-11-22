@@ -6,11 +6,6 @@ return {
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
-  -- Key mappings will load the plugin the first time they get executed.
-  keys = {
-    { "<leader>f", ":Neotree toggle reveal_force_cwd current<cr>", desc = "Toggle [F]ile explorer" },
-    { "<leader>kt", ":Neotree toggle reveal right<cr>", desc = "Toggle side file [T]ree" },
-  },
   config = function()
     local renderer = require("neo-tree.ui.renderer")
 
@@ -221,12 +216,13 @@ return {
     end
 
     local function switch_to(source)
-      require("neo-tree.command").execute({ action = "focus", source = source, position = "right" })
+      require("neo-tree.command").execute({ action = "focus", source = source, position = "float" })
     end
 
     require("neo-tree").setup({
       close_if_last_window = true,
       window = {
+        position = "current",
         width = 40,
         mappings = {
           ["e"] = "switch_to_filesystem",
@@ -246,7 +242,6 @@ return {
         end,
       },
       filesystem = {
-        hijack_netrw_behavior = "disabled",
         window = {
           mappings = {
             ["z"] = "none",
@@ -267,5 +262,8 @@ return {
         },
       },
     })
+
+    vim.keymap.set("n", "<leader>ke", ":Neotree show reveal_force_cwd current<CR>", { desc = "[E]xpolore" })
+    vim.keymap.set("n", "<leader>kb", ":Neotree buffers toggle reveal right<CR>", { desc = "Toggle [B]uffers" })
   end,
 }
