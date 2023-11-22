@@ -94,7 +94,7 @@ return {
           telemetry = { enable = false },
         },
       },
-      vue_ls = {},
+      vuels = {},
     }
 
     -- Setup neovim lua configuration
