@@ -247,6 +247,9 @@ return {
         end,
       },
       filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+        },
         window = {
           mappings = {
             ["z"] = "none",
