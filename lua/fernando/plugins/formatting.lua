@@ -10,7 +10,7 @@ return {
         require("conform").format({ async = true, lsp_fallback = true })
       end,
       mode = "",
-      desc = "[F]ormat document",
+      desc = "[F]ormat document or selection",
     },
   },
   -- Everything in opts will be passed to setup()

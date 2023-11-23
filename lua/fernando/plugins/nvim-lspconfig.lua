@@ -125,6 +125,7 @@ return {
       end,
     })
 
+    -- Ensure linters and formatters are installed
     require("mason-tool-installer").setup({
       ensure_installed = {
         -- linters
