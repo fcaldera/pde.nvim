@@ -4,7 +4,6 @@ return {
   cmd = { "ConformInfo" },
   keys = {
     {
-      -- Customize or remove this keymap to your liking
       "<leader>kf",
       function()
         require("conform").format({ async = true, lsp_fallback = true })
@@ -26,20 +25,12 @@ return {
       html = { "prettierd" },
       json = { "prettierd" },
       yaml = { "prettierd" },
-      -- markdown = { "prettierd" },
       vue = { "prettierd" },
     },
     -- Set up format-on-save
-    format_on_save = { timeout_ms = 500, lsp_fallback = true },
-    -- Customize formatters
-    formatters = {
-      shfmt = {
-        prepend_args = { "-i", "2" },
-      },
-    },
+    format_on_save = { timeout_ms = 1000, lsp_fallback = true },
   },
   init = function()
-    -- If you want the formatexpr, here is the place to set it
     vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
   end,
 }
