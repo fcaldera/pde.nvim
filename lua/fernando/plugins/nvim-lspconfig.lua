@@ -136,5 +136,8 @@ return {
         "stylua",
       },
     })
+
+    -- Uncomment to disable the inline diagnostic messages
+    -- vim.diagnostic.config({ virtual_text = false })
   end,
 }
