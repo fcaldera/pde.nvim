@@ -12,6 +12,9 @@ return {
 
     -- Additional lua configuration, makes nvim stuff amazing!
     "folke/neodev.nvim",
+
+    -- Automatically install linters and formatters
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
     -- [[ Configure LSP ]]
@@ -120,6 +123,17 @@ return {
           filetypes = (servers[server_name] or {}).filetypes,
         })
       end,
+    })
+
+    require("mason-tool-installer").setup({
+      ensure_installed = {
+        -- linters
+        "eslint_d",
+        "stylelint",
+        -- formatters
+        "prettierd",
+        "stylua",
+      },
     })
   end,
 }

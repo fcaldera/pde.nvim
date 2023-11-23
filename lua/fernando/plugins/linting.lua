@@ -1,11 +1,7 @@
 return {
   "mfussenegger/nvim-lint",
-  -- lazy = true,
-  -- event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
-  dependencies = {
-    "williamboman/mason.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-  },
+  lazy = true,
+  event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
   config = function()
     local lint = require("lint")
 
@@ -27,16 +23,6 @@ return {
       end,
     })
 
-    vim.keymap.set("n", "<leader>kl", function()
-      lint.try_lint()
-    end, { desc = "Trigger linting for current file" })
-
-    require("mason-tool-installer").setup({
-      ensure_installed = {
-        "eslint_d",
-        "stylelint",
-      },
-      run_on_start = true,
-    })
+    vim.keymap.set("n", "<leader>kl", lint.try_lint, { desc = "Trigger linting for current file" })
   end,
 }
