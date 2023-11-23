@@ -26,7 +26,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- [[ My custom keymaps ]]
-
 -- Show git status
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "[G]it [S]tatus" })
 
@@ -58,7 +57,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "Q", "<nop>")
 
 -- [[ My commands variations ]]
-
 -- Register parent command group
 require("which-key").register({
   ["<leader>k"] = { name = "Commands", _ = "which_key_ignore" },

@@ -26,7 +26,7 @@ return {
       html = { "prettierd" },
       json = { "prettierd" },
       yaml = { "prettierd" },
-      markdown = { "prettierd" },
+      -- markdown = { "prettierd" },
       vue = { "prettierd" },
     },
     -- Set up format-on-save
