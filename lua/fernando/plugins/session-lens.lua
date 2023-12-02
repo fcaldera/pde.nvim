@@ -5,7 +5,7 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   config = function()
-    require("session-lens").setup({ winblend = 0 })
+    require("session-lens").setup({ winblend = 10 })
     require("telescope").load_extension("session-lens")
 
     vim.keymap.set("n", "<leader>ss", require("session-lens").search_session, { desc = "Search [S]essions" })
