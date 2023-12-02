@@ -23,10 +23,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, opts = { transparent_background = true } },
   { import = "fernando.plugins" },
 })
 
 require("fernando.keymaps")
-
-vim.cmd.colorscheme("catppuccin")
