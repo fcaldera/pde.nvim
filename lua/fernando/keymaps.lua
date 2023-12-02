@@ -37,8 +37,8 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected lines down"
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected lines up" })
 
 -- Alternative delete/replace: avoid registers
-vim.keymap.set({ "n", "v" }, "<M-d>", '"_d', { desc = "[D]elete to the void register" })
-vim.keymap.set("x", "<M-p>", [["_dP]], { desc = "[P]aste to void register" })
+vim.keymap.set({ "n", "v" }, "<leader>kd", '"_d', { desc = "[D]elete to the void register" })
+vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "[P]aste to void register" })
 
 -- Keep the cursor in the middle
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
