@@ -98,6 +98,7 @@ return {
         },
       },
       vuels = {},
+      elixirls = {},
     }
 
     -- Setup neovim lua configuration
