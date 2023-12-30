@@ -8,9 +8,7 @@ return {
     "saadparwaiz1/cmp_luasnip",
     -- Adds completion capabilities
     "hrsh7th/cmp-nvim-lsp",
-    -- "hrsh7th/cmp-buffer",
-    -- "hrsh7th/cmp-path",
-    -- "hrsh7th/cmp-cmdline",
+    "hrsh7th/cmp-path",
     -- Adds a number of user-friendly snippets
     "rafamadriz/friendly-snippets",
   },
@@ -62,9 +60,7 @@ return {
       sources = {
         { name = "nvim_lsp" }, -- lsp-servers
         { name = "luasnip" }, -- snippets
-        -- { name = "buffer" }, -- text within current buffer
-        -- { name = "path" }, -- file system paths
-        -- { name = "cmdline" },
+        { name = "path" }, -- file system paths
       },
     })
   end,
