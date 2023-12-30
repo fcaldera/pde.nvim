@@ -83,7 +83,7 @@ return {
       tsserver = {},
       cssls = {},
       html = { filetypes = { "html" } },
-      emmet_ls = { filetypes = { "css", "html", "javascript", "javascriptreact" } },
+      emmet_ls = { filetypes = { "css", "html", "javascript", "javascriptreact", "vue" } },
       lua_ls = {
         Lua = {
           workspace = { checkThirdParty = false },
