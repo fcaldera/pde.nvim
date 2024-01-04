@@ -71,6 +71,5 @@ vim.keymap.set("n", "Q", "<nop>")
 
 -- Buffer commands
 vim.keymap.set("n", "<leader>kx", ":bd<CR>", { desc = "Close current buffer" })
-vim.keymap.set("n", "<leader>kw", ":w<CR>", { desc = "[W]rite current buffer out" })
 
 -- vim: ts=2 sts=2 sw=2 et
