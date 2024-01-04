@@ -26,6 +26,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- [[ My custom keymaps ]]
+-- Register command parent group
+require("which-key").register({
+  ["<leader>k"] = { name = "Commands", _ = "which_key_ignore" },
+})
+
 -- Show git status
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "[G]it [S]tatus" })
 
@@ -46,6 +51,14 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Replace all of the word-under-cursor occurrences
+vim.keymap.set(
+  "n",
+  "<leader>kr",
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "[R]eplace all with..." }
+)
+
 -- Quickfix navigation. Commented until I know what the heck is that
 -- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 -- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
@@ -56,18 +69,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- I still don't know why, but here we are!
 vim.keymap.set("n", "Q", "<nop>")
 
--- [[ My commands variations ]]
--- Register parent command group
-require("which-key").register({
-  ["<leader>k"] = { name = "Commands", _ = "which_key_ignore" },
-})
-
--- Replace all of the word-under-cursor occurrences
-vim.keymap.set(
-  "n",
-  "<leader>kr",
-  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-  { desc = "[R]eplace all with..." }
-)
+vim.keymap.set("n", "<leader>kx", ":bd", { desc = "Close current buffer" })
 
 -- vim: ts=2 sts=2 sw=2 et
