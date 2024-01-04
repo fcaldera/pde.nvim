@@ -69,6 +69,8 @@ vim.keymap.set(
 -- I still don't know why, but here we are!
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<leader>kx", ":bd", { desc = "Close current buffer" })
+-- Buffer commands
+vim.keymap.set("n", "<leader>kx", ":bd<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>kw", ":w<CR>", { desc = "[W]rite current buffer out" })
 
 -- vim: ts=2 sts=2 sw=2 et
