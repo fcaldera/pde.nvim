@@ -49,4 +49,8 @@ vim.opt.smartindent = true
 vim.opt.colorcolumn = "80"
 vim.opt.wrap = false
 
+-- Spell checker
+vim.opt.spelllang = "en_us"
+vim.opt.spell = true
+
 -- vim: ts=2 sts=2 sw=2 et
