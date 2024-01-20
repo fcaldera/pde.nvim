@@ -30,7 +30,6 @@ return {
         mappings = {
           ["<space>"] = "none",
           ["f"] = "none",
-
           ["e"] = "switch_to_filesystem",
           ["b"] = "switch_to_buffers",
           ["g"] = "switch_to_git_status",

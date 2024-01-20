@@ -12,6 +12,5 @@ return {
       },
     })
 
-    vim.keymap.set({ "n", "v" }, "<leader>kf", vim.lsp.buf.format, { desc = "[F]ormat document or selection" })
   end,
 }
