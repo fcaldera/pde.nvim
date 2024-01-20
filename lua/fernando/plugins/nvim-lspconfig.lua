@@ -82,8 +82,8 @@ return {
     local servers = {
       tsserver = {},
       cssls = {},
-      html = { filetypes = { "html" } },
-      emmet_ls = { filetypes = { "css", "html", "javascript", "javascriptreact", "vue" } },
+      html = { filetypes = { "html", "eelixir", "heex" } },
+      emmet_ls = { filetypes = { "css", "html", "javascriptreact", "vue", "eelixir", "heex" } },
       lua_ls = {
         Lua = {
           workspace = { checkThirdParty = false },

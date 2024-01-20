@@ -16,7 +16,7 @@ return {
       ---@diagnostic disable-next-line missing-fields
       require("nvim-treesitter.configs").setup({
         -- Add languages to be installed here that you want installed for treesitter
-        ensure_installed = { "lua", "html", "css", "javascript", "json" },
+        ensure_installed = { "lua", "html", "css", "javascript", "json", "elixir", "heex", "eex", "erlang", "surface" },
 
         -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
         auto_install = true,
