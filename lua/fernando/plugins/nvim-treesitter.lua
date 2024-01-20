@@ -16,10 +16,14 @@ return {
       ---@diagnostic disable-next-line missing-fields
       require("nvim-treesitter.configs").setup({
         -- Add languages to be installed here that you want installed for treesitter
-        ensure_installed = { "lua", "html", "css", "javascript", "json", "elixir", "heex", "eex", "erlang", "surface" },
+        ensure_installed = {
+          "c", "lua", "vim", "vimdoc", "query",
+          "html", "css", "javascript", "json",
+          "elixir", "heex", "eex", "surface"
+        },
 
         -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
-        auto_install = true,
+        auto_install = false,
 
         highlight = { enable = true },
         indent = { enable = true },
@@ -78,6 +82,7 @@ return {
         },
       })
 
+      vim.treesitter.language.register("heex", "eelixir")
       vim.keymap.set("n", "[C", require("treesitter-context").go_to_context, { desc = "Goto context", silent = true })
     end, 0)
   end,
