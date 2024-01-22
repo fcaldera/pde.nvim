@@ -23,7 +23,7 @@ local catppuccin = {
       highlight_overrides = {
         all = function(colors)
           return {
-            LineNr = { fg = colors.overlay2 },
+            LineNr = { fg = colors.overlay1 },
           }
         end,
       },
@@ -107,4 +107,4 @@ local dracula = {
   end,
 }
 
-return rosepine
+return catppuccin
