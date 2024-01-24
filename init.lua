@@ -24,6 +24,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { import = "fernando.plugins" },
+  change_detection = {
+    notify = false,
+  },
 })
 
 require("fernando.keymaps")
