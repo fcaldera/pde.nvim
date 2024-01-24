@@ -102,7 +102,6 @@ return {
     end, { desc = "[/] Fuzzily search in current buffer" })
 
     vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files, { desc = "Search [G]it [F]iles" })
-    vim.keymap.set("n", "<leader>gc", require("telescope.builtin").git_bcommits, { desc = "Search [G]it [C]ommits" })
     vim.keymap.set("n", "<leader>gm", require("telescope.builtin").git_status, { desc = "Search [G]it [M]odified files" })
     vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "Search [F]iles" })
     vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "Search [H]elp" })
