@@ -24,7 +24,6 @@ return {
     end
 
     require("neo-tree").setup({
-      hijack_netrw_behavior = "disabled",
       close_if_last_window = true,
       window = {
         position = "current",
@@ -49,6 +48,7 @@ return {
         end,
       },
       filesystem = {
+        hijack_netrw_behavior = "disabled",
         filtered_items = {
           hide_dotfiles = false,
         },
