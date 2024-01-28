@@ -31,6 +31,9 @@ require("which-key").register({
   ["<leader>k"] = { name = "Commands", _ = "which_key_ignore" },
 })
 
+-- Show file explorer
+vim.keymap.set("n", "<leader>ke", ":Ex<CR>", { desc = "Show file [E]xplorer" })
+
 -- Show git status
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "[G]it [S]tatus" })
 
@@ -71,5 +74,7 @@ vim.keymap.set("n", "Q", "<nop>")
 
 -- Buffer commands
 vim.keymap.set("n", "<leader>kx", ":bd<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>;", ":bn<CR>", { desc = "Go to next buffer" })
+vim.keymap.set("n", "<leader>j", ":bp<CR>", { desc = "Go to previous buffer" })
 
 -- vim: ts=2 sts=2 sw=2 et

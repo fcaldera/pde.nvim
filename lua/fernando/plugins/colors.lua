@@ -56,7 +56,6 @@ local kanagawa = {
         light = "lotus",
       },
     })
-
     vim.cmd.colorscheme("kanagawa")
   end,
 }
@@ -70,7 +69,6 @@ local tokyonight = {
     require("tokyonight").setup({
       style = "night",
     })
-
     vim.cmd.colorscheme("tokyonight")
   end,
 }
@@ -107,4 +105,4 @@ local dracula = {
   end,
 }
 
-return catppuccin
+return rosepine
