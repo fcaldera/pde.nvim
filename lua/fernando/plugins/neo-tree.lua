@@ -47,13 +47,13 @@ return {
         end,
       },
       filesystem = {
-        hijack_netrw_behavior = "disabled",
         filtered_items = {
           hide_dotfiles = false,
         },
       },
     })
 
+    vim.keymap.set("n", "<leader>ke", ":Neotree show reveal_force_cwd current<CR>", { desc = "Show file [E]xplorer" })
     vim.keymap.set("n", "<leader>kt", ":Neotree show focus reveal left<CR>", { desc = "Show/focus file [T]ree" })
     vim.keymap.set("n", "<leader>kg", ":Neotree float git_status<CR>", { desc = "[G]it status dialog" })
   end,

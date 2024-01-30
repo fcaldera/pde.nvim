@@ -31,9 +31,6 @@ require("which-key").register({
   ["<leader>k"] = { name = "Commands", _ = "which_key_ignore" },
 })
 
--- Show file explorer
-vim.keymap.set("n", "<leader>ke", ":Ex<CR>", { desc = "Show file [E]xplorer" })
-
 -- Show git status
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "[G]it [S]tatus" })
 
