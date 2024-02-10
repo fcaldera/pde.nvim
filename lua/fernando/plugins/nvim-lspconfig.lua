@@ -11,7 +11,7 @@ return {
     -- Additional lua configuration, makes nvim stuff amazing!
     "folke/neodev.nvim",
     -- Automatically install linters and formatters
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    -- "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
     -- [[ Configure LSP ]]
@@ -122,16 +122,16 @@ return {
     })
 
     -- Ensure linters and formatters are installed
-    require("mason-tool-installer").setup({
-      ensure_installed = {
-        -- linters
-        "eslint_d",
-        "stylelint",
-        -- formatters
-        "prettierd",
-        "stylua",
-      },
-    })
+    -- require("mason-tool-installer").setup({
+    --   ensure_installed = {
+    --     -- linters
+    --     "eslint_d",
+    --     "stylelint",
+    --     -- formatters
+    --     "prettierd",
+    --     "stylua",
+    --   },
+    -- })
 
     -- Uncomment to disable the inline diagnostic messages
     -- vim.diagnostic.config({ virtual_text = false })
