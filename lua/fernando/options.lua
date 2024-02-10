@@ -11,6 +11,9 @@ vim.wo.relativenumber = true
 -- Enable mouse mode
 vim.o.mouse = "a"
 
+-- Always use block cursor
+vim.opt.guicursor=""
+
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
