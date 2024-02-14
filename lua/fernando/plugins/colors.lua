@@ -105,4 +105,4 @@ local dracula = {
   end,
 }
 
-return rosepine
+return catppuccin

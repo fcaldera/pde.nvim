@@ -1,10 +1,15 @@
 return {
   -- Autocompletion
   "hrsh7th/nvim-cmp",
-  event = "InsertEnter",
   dependencies = {
     -- Snippet Engine & its associated nvim-cmp source
-    "L3MON4D3/LuaSnip",
+    {
+      'L3MON4D3/LuaSnip',
+      build = (function()
+        -- Build Step is needed for regex support in snippets
+        return 'make install_jsregexp'
+      end)(),
+    },
     "saadparwaiz1/cmp_luasnip",
     -- Adds completion capabilities
     "hrsh7th/cmp-nvim-lsp",
