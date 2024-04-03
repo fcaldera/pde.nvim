@@ -16,6 +16,7 @@ local catppuccin = {
         gitsigns = true,
         nvimtree = true,
         treesitter = true,
+        treesitter_context = true,
         neotree = true,
         mason = true,
         which_key = true,

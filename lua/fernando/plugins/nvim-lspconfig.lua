@@ -85,7 +85,8 @@ return {
       tsserver = {},
       cssls = {},
       html = { filetypes = { "html", "eelixir", "heex" } },
-      emmet_ls = { filetypes = { "css", "html", "javascriptreact", "vue", "eelixir", "heex" } },
+      -- Emmet became pretty anying now that I'm typing faster
+      -- emmet_ls = { filetypes = { "css", "html", "javascriptreact", "vue", "eelixir", "heex" } },
       lua_ls = {
         Lua = {
           workspace = { checkThirdParty = false },
