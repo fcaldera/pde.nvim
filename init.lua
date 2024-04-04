@@ -8,6 +8,7 @@ vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
 require("fernando.options")
+require("fernando.filetypes")
 
 -- Install `lazy.nvim` plugin manager
 -- https://github.com/folke/lazy.nvim

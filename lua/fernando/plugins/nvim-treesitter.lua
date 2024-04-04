@@ -26,6 +26,7 @@ return { -- Highlight, edit, and navigate code
         "heex",
         "eex",
         "surface",
+        "groovy",
       },
       -- Autoinstall languages that are not installed.
       auto_install = true,

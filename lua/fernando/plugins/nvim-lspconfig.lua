@@ -159,7 +159,7 @@ return { -- LSP Configuration & Plugins
       cssls = {},
       html = { filetypes = { "html", "eelixir", "heex" } },
       -- emmet_ls = { filetypes = { "css", "html", "javascriptreact", "vue", "eelixir", "heex" } },
-      vuels = {},
+      volar = { filetypes = { "vue", "typescript", "javascript" } },
       elixirls = {},
     }
 
