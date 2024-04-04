@@ -14,12 +14,41 @@ local catppuccin = {
       integrations = {
         cmp = true,
         gitsigns = true,
-        nvimtree = true,
         treesitter = true,
         treesitter_context = true,
         neotree = true,
+        markdown = true,
         mason = true,
         which_key = true,
+        mini = {
+          enabled = true,
+        },
+        indent_blankline = {
+          enabled = true,
+          scope_color = "lavender",
+          colored_indent_levels = false,
+        },
+        native_lsp = {
+          enabled = true,
+          virtual_text = {
+            errors = { "italic" },
+            hints = { "italic" },
+            warnings = { "italic" },
+            information = { "italic" },
+          },
+          underlines = {
+            errors = { "underline" },
+            hints = { "underline" },
+            warnings = { "underline" },
+            information = { "underline" },
+          },
+          inlay_hints = {
+            background = true,
+          },
+        },
+        telescope = {
+          enabled = true,
+        },
       },
       highlight_overrides = {
         all = function(colors)
