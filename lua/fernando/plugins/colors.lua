@@ -54,6 +54,13 @@ local catppuccin = {
         all = function(colors)
           return {
             LineNr = { fg = colors.overlay1 },
+            MiniStatuslineModeNormal = { bg = colors.text, style = {} },
+            MiniStatuslineModeCommand = { style = {} },
+            MiniStatuslineModeInsert = { style = {} },
+            MiniStatuslineModeOther = { style = {} },
+            MiniStatuslineModeReplace = { style = {} },
+            MiniStatuslineModeVisual = { style = {} },
+            MiniStatuslineFileinfo = { bg = colors.mantle },
           }
         end,
       },

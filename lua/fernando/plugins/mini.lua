@@ -31,6 +31,13 @@ return { -- Collection of various small independent plugins/modules
       return "%2l:%-2v"
     end
 
+    local orig_sm = statusline.section_mode
+
+    statusline.section_mode = function(args)
+      local mode, mode_hl = orig_sm(args)
+      return string.upper(mode), mode_hl
+    end
+
     -- ... and there is more!
     --  Check out: https://github.com/echasnovski/mini.nvim
   end,
