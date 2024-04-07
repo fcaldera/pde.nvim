@@ -33,6 +33,7 @@ return { -- Collection of various small independent plugins/modules
 
     local orig_sm = statusline.section_mode
 
+    ---@diagnostic disable-next-line: duplicate-set-field
     statusline.section_mode = function(args)
       local mode, mode_hl = orig_sm(args)
       return string.upper(mode), mode_hl
